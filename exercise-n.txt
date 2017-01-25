@@ -34,3 +34,16 @@ Exercise 3:
 SELECT country, COUNT(*) as number from Address group by country order by number DESC;
 
 SELECT lower(country), COUNT(*) as number from Address group by country order by number DESC;
+
+Exercise 4:
+
+SELECT name, firstName from AddressBook, Entry WHERE name = "Pharetra Ut Limited" GROUP BY firstName;
+
+Exercise 5:
+SELECT COUNT(*) FROM ElectronicMail;
+
+SELECT content, addressBookId from ElectronicMail, Entry WHERE addressBookId = 100 GROUP BY content;
+
+Exercise 6:
+
+SELECT content FROM Phone, Entry WHERE firstName = "Charlotte", lastName = "Jenkins" GROUP BY content;
