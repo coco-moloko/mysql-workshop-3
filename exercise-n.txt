@@ -21,3 +21,9 @@ type enum('home','work','other'), content varchar(255));
 CREATE TABLE Phone(id int auto_increment primary key, entryId int, 
 type enum('home','work','other'), subtype enum('landline','cellular','fax'), 
 content varchar(255));
+
+Exercise 2:
+USE decodemtl_addressbook
+source data/import-account.sql;
+source data/import-addressbook.sql;
+source data/import-entry.sql;
