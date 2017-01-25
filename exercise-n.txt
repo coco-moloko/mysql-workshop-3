@@ -23,7 +23,14 @@ type enum('home','work','other'), subtype enum('landline','cellular','fax'),
 content varchar(255));
 
 Exercise 2:
+
 USE decodemtl_addressbook
 source data/import-account.sql;
 source data/import-addressbook.sql;
 source data/import-entry.sql;
+
+Exercise 3:
+
+SELECT country, COUNT(*) as number from Address group by country order by number DESC;
+
+SELECT lower(country), COUNT(*) as number from Address group by country order by number DESC;
